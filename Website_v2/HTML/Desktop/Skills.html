@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "Daniel Williams, Personal portfolio: Skills Page">
+    <meta name = "viewpoint" content = "width = device-width, initial-scale = 1">
+    <title>Daniel Williams, Personal project portfolio</title>
+    <link href = "../../CSS/Desktop/SkillsCSS.css" rel = "StyleSheet" type = "text/css">
+    <link href = "../../CSS/Desktop/Navigation.css" rel = "StyleSheet" type = text/css>
+</head>
+<div class = "SideBar">
+    <div class = "SideBarImageContainer">
+        <img src = "../../Images/Profile.jpg" class = "CornerImage" alt ="Corner Image">
+        <p class = "SideBarImageUnderText">Daniel Williams</p>
+    </div>
+    <div class = "GeneralNavigation">
+        <a href ="main.html" class = "Home">
+            <img class = "HomeIcon" id = "HomeIcon" alt = "Home" src = "../../Images/Logos/HomeIcon.png" onmouseover="transitionHomeTo()" onmouseleave="transitionHomeBack()">
+            <h6 class = "HomeText">Home</h6>
+        </a>
+        <a href ="About.html">
+            <img class = "AboutIcon" id = "AboutIcon" alt = "About" src = "../../Images/Logos/person-IconBefore.png" onmouseover="transitionAboutTo()" onmouseleave="transitionAboutBack()">
+            <h6 class = "AboutText">About</h6>
+        </a>
+        <a href="Skills.html">
+            <img class = "SkillsIcon" id = "SkillsIcon" alt = "Skills" src = "../../Images/Logos/GearsIconAfter.png">
+            <h6 class = "SkillsText">Skills</h6>
+        </a>
+        <a href="Projects.html">
+            <img class = "ProjectsIcon" id = "ProjectsIcon" alt = "Projects" src = "../../Images/Logos/CPUIconBefore.png" onmouseover="transitionProjectsTo()" onmouseleave="transitionProjectsBack()">
+            <h6 class = "ProjectsText">Projects</h6>
+        </a>
+        <a href="Contact.html">
+            <img class = "ContactIcon" id = "ContactIcon" alt="Contact" src = "../../Images/Logos/EmailBefore.png" onmouseover="transitionContactTo()" onmouseleave="transitionContactBack()">
+            <h6 class = "ContactText">Contact</h6>
+        </a>
+
+    </div>
+    <div class = "SideBarBottomLogos">
+        <ul class = "logosList">
+            <li class = "logos"><img class = "Linkedin" id = "Linkedin" onclick = "openLinkedin()" src = "../../Images/Logos/linkedin-logo.png"></li>
+            <li class = "logos"><img class = "GitHub" id = "GitHub" onclick = "openGitHub()" src = "../../Images/Logos/GitHub-Mark-Light-120px-plus.png"> </li>
+            <li class = "logos"><img class = "Facebook" id = "Facebook" onclick = "openFacebook()" src = "../../Images/Logos/Facebook.png"></li>
+            <li class = "logos"><img class = "Instagram" id ="Instagram" onclick = "openInstagram()" src = "../../Images/Logos/Instagram.png"></li>
+        </ul>
+    </div>
+</div>
+
+<body>
+<div class = cover id = cover></div>
+    <div class = BackgroundContainer>
+        <div class = "BackgroundMiddle" id="BackgroundMiddle">
+            <h1>Skills:</h1>
+            <p class = "SkillText">Languages: I am proficient in Java, C/C++, and I have done some projects with python, mySQL, HTML, JavaScript, Scheme and PHP.</p>
+            <p class = "SkillText">Abstract Data Types: I have implemented and used many ADT in my projects, such as Stacks, Queues in an polymorphic and modular manner for code usability throughout.</p>
+            <p class = "SkillText">Linux: I am experienced in using linux/Unix operating systems. My main computer runs Pop-OS, because it helps me increase my productivity as a developer.</p>
+            <p class = "SkillText">Multitasking: I like to keep organized in order to prioritize tasks properly and meet my deadlines everytime.</p>
+            <p class = "SkillText">Analytical Skills: Besides having a Math Minor, I have always been a critical and out of the box thinker.</p>
+        </div>
+    </div>
+
+    <div class = "SkillsExamples" id="SkillsExamples"></div>
+    <div class="SkillLinks">
+        <div>Java</div>
+        <div>C/C++</div>
+        <div>Python</div>
+        <div>mySQL</div>
+        <div>HTML</div>
+        <div>JavaScript</div>
+        <div>Scheme</div>
+        <div>PHP</div>
+    </div>
+</body>
+<div class = Arrow id="RArrow" onclick="rotateImagesRight()"><h1>&#10095;</h1></div>
+<div class = Arrow id="LArrow" onclick="rotateImagesLeft()"><h1>&#10094;</h1></div>
+
+<script src = "../../JavaScript/Desktop/Skills.js"></script>
+<script src = "../../JavaScript/Desktop/SubFileJS.js"></script>
+</html>

@@ -1,0 +1,348 @@
+.SideBar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0e0c0c;
+    overflow-x: hidden;
+    font-family: "AR PL UKai CN";
+
+}
+.GeneralNavigation{
+    text-align: center;
+    position: relative;
+    padding-top: 40%;
+}
+.SideBar .GeneralNavigation a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    float: top;
+}
+
+.HomeIcon{
+    height: 40px;
+    width: 40px;
+}
+.HomeIcon:hover + .HomeText{
+    transition: .6s;
+    opacity: 1;
+}
+.HomeText{
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.AboutIcon{
+    height: 40px;
+    width: 40px;
+}
+.AboutIcon:hover + .AboutText{
+    transition: .6s;
+    opacity: 1;
+}
+.AboutText{
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.SkillsIcon{
+    height: 40px;
+    width: 50px;
+}
+.SkillsIcon:hover + .SkillsText{
+    transition: .6s;
+    opacity: 1;
+}
+.SkillsText{
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.ProjectsIcon{
+    height: 40px;
+    width: 40px;
+}
+.ProjectsIcon:hover + .ProjectsText{
+    transition: .6s;
+    opacity: 1;
+}
+.ProjectsText{
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.ContactIcon{
+    height: 40px;
+    width: 40px;
+}
+.ContactIcon:hover + .ContactText{
+    transition: .6s;
+    opacity: 1;
+}
+.ContactText{
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.SideBar a:hover{
+    cursor: pointer;
+    color: white;
+}
+.SideBarImageContainer{
+    text-align: center;
+    background-Color: black;
+
+}
+.SideBar .SideBarImageContainer .SideBarImageUnderText{
+    color: white;
+    position: static;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-weight: bold;
+
+}
+.SideBar .SideBarImageContainer .SideBarImageUnderText:hover {
+    transition: 4s;
+    color: lightskyblue;
+}
+.SideBar .SideBarImageContainer .CornerImage{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.CornerImage:hover{
+    transition: 6s;
+    rotation: 360deg;
+}
+.SideBarBottomLogos{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+.SideBarBottomLogos .logosList{
+    padding-top: 10px;
+}
+.SideBarBottomLogos .logos {
+    display: block;
+    transform: translate(-50%,-50%);
+    padding-top: 8px;
+}
+.logos:hover {
+    cursor: pointer;
+    transform: scale(1.2) translate(-50%,-50%);
+}
+.SideBarBottomLogos .Linkedin {
+    height: 30px;
+    width: 30px;
+}
+.SideBarBottomLogos .GitHub{
+    height: 30px;
+    width: 30px;
+}
+.SideBarBottomLogos .Facebook{
+    height: 30px;
+    width: 30px;
+}
+.SideBarBottomLogos .Instagram{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+@media (max-height: 700px){
+    .SideBar {
+        height: 100%;
+        width: 80px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #0e0c0c;
+        overflow: hidden;
+        font-family: "AR PL UKai CN";
+
+    }
+
+    .GeneralNavigation{
+        text-align: center;
+        position: relative;
+        padding-top: 20%;
+    }
+    .SideBar .GeneralNavigation a{
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: inline-block;
+        float: top;
+    }
+
+    .HomeIcon{
+        height: 25px;
+        width: 25px;
+    }
+    .HomeIcon:hover + .HomeText{
+        transition: .6s;
+        opacity: 1;
+    }
+    .HomeText{
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .AboutIcon{
+        height: 25px;
+        width: 25px;
+    }
+    .AboutIcon:hover + .AboutText{
+        transition: .6s;
+        opacity: 1;
+    }
+    .AboutText{
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .SkillsIcon{
+        height: 25px;
+        width: 30px;
+    }
+    .SkillsIcon:hover + .SkillsText{
+        transition: .6s;
+        opacity: 1;
+    }
+    .SkillsText{
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .ProjectsIcon{
+        height: 25px;
+        width: 25px;
+    }
+    .ProjectsIcon:hover + .ProjectsText{
+        transition: .6s;
+        opacity: 1;
+    }
+    .ProjectsText{
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .ContactIcon{
+        height: 25px;
+        width: 25px;
+    }
+    .ContactIcon:hover + .ContactText{
+        transition: .6s;
+        opacity: 1;
+    }
+    .ContactText{
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .SideBar a:hover{
+        cursor: pointer;
+        color: white;
+    }
+    .SideBarImageContainer{
+        text-align: center;
+        background-Color: black;
+
+    }
+    .SideBar .SideBarImageContainer .SideBarImageUnderText{
+        color: white;
+        position: static;
+        padding-bottom: 10px;
+        margin-top: 0;
+        font-weight: bold;
+
+    }
+    .SideBar .SideBarImageContainer .SideBarImageUnderText:hover {
+        transition: 4s;
+        color: lightskyblue;
+    }
+    .SideBar .SideBarImageContainer .CornerImage{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .CornerImage:hover{
+        transition: 6s;
+        rotation: 360deg;
+    }
+    .SideBarBottomLogos{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .SideBarBottomLogos .logosList{
+    }
+    .SideBarBottomLogos .logos {
+        display: block;
+        padding-top: 8px;
+        position: relative;
+    }
+    .logos:hover {
+        cursor: pointer;
+        transform: scale(1.2) translate(-50%,-50%);
+    }
+    .SideBarBottomLogos .Linkedin {
+        height: 20px;
+        width: 20px;
+    }
+    .SideBarBottomLogos .GitHub{
+        height: 20px;
+        width: 20px;
+    }
+    .SideBarBottomLogos .Facebook{
+        height: 20px;
+        width: 20px;
+    }
+    .SideBarBottomLogos .Instagram{
+        height: 20px;
+        width: 20px;
+    }
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media(max-height: 560px){
+    .SideBar{
+        overflow-y: visible;
+    }
+    .SideBarBottomLogos{
+        position: relative;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,73 @@
+body{
+    background-color: #282828;
+    overflow: hidden;
+}
+.SnakeGridLayout{
+    grid-template-columns: auto auto;
+    display: grid;
+    justify-content: center;
+}
+.GameContainer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+
+}
+.GameArea{
+    position: relative;
+    background-color: #f1f1f1;
+    width: 1125px;
+    height: 750px;
+}
+.Food{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: tomato;
+
+}
+.Snake{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+
+    background-image: linear-gradient(to right, blue, green);
+}
+.header{
+    color: white;
+
+}
+.SnakeScore{
+    color: white;
+}
+.StartButton{
+    margin-top: 20px;
+    height: 100%;
+    width: 200px;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    opacity: 1;
+}
+.StartButton:hover{
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+.SnakeLose{
+    display: none;
+    margin-top: 20px;
+    height: 100%;
+    width: 200px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    opacity: 1;
+}

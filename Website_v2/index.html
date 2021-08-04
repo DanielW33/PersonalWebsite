@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "Daniel Williams, Personal portfolio: Homepage">
+    <meta name = "viewpoint" content = "width = device-width, initial-scale = 1">
+    <title>Daniel Williams, Personal project portfolio</title>
+    <link href = "CSS/indexCSS.css" rel = "StyleSheet" type = "text/css">
+
+
+</head>
+<body>
+<div class = main>
+    <h1>Redirecting you to device appropriate version of the website. This page should not be shown.</h1>
+</div>
+<script>
+    window.onload = checkTouchScreen();
+
+    function checkTouchScreen(){
+        if(!navigator.maxTouchPoints || 'ontouchstart' in document.documentElement){
+            window.open("HTML/Desktop/main.html", "_self");
+
+        }
+        else{
+            window.open("HTML/Mobile/main.html", "_self");
+        }
+    }
+
+</script>
+
+</body>
+</html>

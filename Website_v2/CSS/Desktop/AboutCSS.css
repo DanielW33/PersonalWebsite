@@ -1,0 +1,229 @@
+body {
+    background-color: #282828;
+    overflow-y: hidden;
+}
+.AboutContainer{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 65%;
+    left: 80px;
+    font-family: "AR PL UKai CN";
+    background-color: #1f1f1f;
+}
+.AboutBody {
+}
+.AboutTitle{
+    text-align: center;
+    color: white;
+    position: relative;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 0;
+}
+.AboutMainText{
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.Dotart{
+    transition: all .3s linear;
+}
+
+@media (max-height: 850px) {
+    body {
+        background-color: #282828;
+        overflow-x: hidden;
+        overflow-y: visible;
+        z-index: 0;
+    }
+    .AboutContainer{
+        position: fixed;
+        height: 100%;
+        top: 0;
+        width: 65%;
+        left: 80px;
+        font-family: "AR PL UKai CN";
+        background-color: #1f1f1f;
+    }
+    .AboutBody {
+
+    }
+    .AboutTitle{
+        text-align: center;
+        color: white;
+        position: relative;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .AboutMainText{
+        color: white;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .Dotart{
+        visibility: visible;
+    }
+
+}
+@media(max-width: 1457px){
+    body {
+        background-color: #282828;
+        overflow-x: hidden;
+        z-index: 0;
+    }
+    .AboutContainer{
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+}
+@media (max-height: 525px) {
+    body {
+        background-color: #282828;
+        overflow: visible;
+        z-index: 0;
+    }
+    .AboutContainer{
+        position: fixed;
+        height: 175%;
+        top: 0;
+        width: 100%;
+        left: 80px;
+        font-family: "AR PL UKai CN";
+        background-color: #1f1f1f;
+    }
+    .AboutBody {
+
+    }
+    .AboutTitle{
+        text-align: center;
+        color: white;
+        position: relative;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .AboutMainText{
+        color: white;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .Dotart{
+        visibility: hidden;
+    }
+}
+@media (max-height: 200px) {
+    body {
+        background-color: #282828;
+        overflow-x: visible;
+        overflow-y: visible;
+        z-index: 0;
+    }
+    .AboutContainer{
+        position: absolute;
+        height: 200%;
+        top: 0;
+        width: 100%;
+        left: 80px;
+        font-family: "AR PL UKai CN";
+        background-color: #1f1f1f;
+    }
+    .AboutBody {
+
+    }
+    .AboutTitle{
+        text-align: center;
+        color: white;
+        position: relative;
+        font-weight: bolder;
+        font-size: 30px;
+        margin-top: 0;
+    }
+    .AboutMainText{
+        color: white;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .Dotart{
+        visibility: hidden;
+    }
+}
+/* Begin Dot Animation */
+
+.DotArt1{
+    top: 25%;
+    right: 2%;
+    height: 50%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 80s infinite linear;
+}
+.DotArt2{
+    top: 27.6%;
+    right: 3.3%;
+    height: 45%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 70s infinite linear;
+}
+.DotArt3{
+    top: 30%;
+    right: 4.6%;
+    height: 40%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 60s infinite linear;
+}
+.DotArt4{
+    top: 32.4%;
+    right: 5.9%;
+    height: 35%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 50s infinite linear;
+}
+.DotArt5{
+    top: 34.8%;
+    right: 7.2%;
+    height: 30%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 40s infinite linear;
+}
+.DotArt6{
+    top: 37.2%;
+    right: 8.5%;
+    height: 25%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 30s infinite linear;
+}
+.DotArt7{
+    top: 39.6%;
+    right: 9.8%;
+    height: 20%;
+    position: fixed;
+    filter: invert(1);
+    animation: rotate 20s infinite linear;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,89 @@
+body{
+    overflow: hidden;
+    font-family: "AR PL UKai CN";
+    text-align: center;
+    padding-left: 80px;
+    background-color: #282828;
+
+}
+.BackgroundContainer{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    background-color: #1f1f1f;
+}
+.BackgroundMiddle{
+    position: relative;
+    height: fit-content;
+    color: white;
+
+}
+.SkillText{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.Rectangles{
+    position: absolute;
+    background-image: linear-gradient(to right, #282828, orangered);
+    left: 0;
+    top: 0;
+    transition: all 2s linear;
+}
+.Arrow{
+    color: white;
+    margin: auto;
+}
+.Arrow:hover{
+    background-color: #454545;
+    cursor: pointer;
+}
+.SkillsExamples{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    background-color: #282828;
+    border: solid;
+}
+
+.ImageFrame{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    display: grid;
+    justify-content: center;
+}
+.ImgLink{
+    padding-top: 20px;
+    font-size:30px;
+    color: blue;
+    margin: auto;
+}
+.ImgLink:hover{
+    color: lightskyblue;
+    cursor: pointer;
+}
+.I1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    width: 100%;
+}
+.I1Title{
+    color: white;
+}
+.I1Title .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.I1Title:hover .tooltiptext {
+    visibility: visible;
+}

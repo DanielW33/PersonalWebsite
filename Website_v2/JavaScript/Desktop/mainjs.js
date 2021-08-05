@@ -1,48 +1,12 @@
 
-window.onload = __init__();
-let Headers = new Array();
+window.onload = __init__;
+let Headers = [];
 function __init__(){
     Writer();
     keymap();
     follower();
-    mouseListener();
 }
-let previousX = -1;
-let previousY = -1;
 
-function mouseListener() {
-    document.addEventListener('mousemove', function (event) {
-        setTimeout(function () {
-            //if (previousX === -1 && previousY === -1) {
-         //       previousX = event.x;
-          //      previousY = event.y;
-          //  }
-
-            let x = event.x;
-            let y = event.y;
-            let frame = document.querySelector("#frame");
-            frame.style.height = "100%";
-
-
-            console.log("Running px: " + previousX + " yp: " + previousY + " x: " + x + " y: " + y);
-            let pixel = document.createElement("div");
-            pixel.style.height = "2px";
-            pixel.style.width = "2px";
-            pixel.style.left = x + "px";
-            pixel.style.top = y + "px";
-            pixel.style.backgroundColor = "blue";
-            pixel.style.position = "absolute";
-
-            frame.appendChild(pixel);
-            setTimeout(function () {
-                frame.removeChild(pixel);
-            }, 500);
-
-
-        }, 300);
-
-    });
-}
 function clickherebutton(){
     let element = document.querySelector("#ClickHere");
     element.style.display = "block";
@@ -54,8 +18,6 @@ function Attacker(h){
     let Element = document.querySelector("#Player");
     h.style.left = h.getBoundingClientRect().left + "px";
     h.style.top = h.getBoundingClientRect().top + "px";
-    console.log("x: " + Element.getBoundingClientRect().x + " y: " + Element.getBoundingClientRect().y);
-    console.log("x: " + h.getBoundingClientRect().left + " y: " + h.getBoundingClientRect().top);
     document.querySelector("#frame").appendChild(h);
     h.style.position = "absolute";
 

@@ -10,17 +10,21 @@ body{
     display: grid;
     grid-template-columns: auto;
     justify-content: space-evenly;
-    background-color: #1f1f1f;
 }
 .BackgroundMiddle{
     position: relative;
     height: fit-content;
     color: white;
 
+    background-color: #1f1f1f;
+
 }
 .SkillText{
     font-weight: bolder;
     font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 .Rectangles{
     position: absolute;
@@ -70,20 +74,19 @@ body{
 .I1Title{
     color: white;
 }
-.I1Title .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-
-    position: absolute;
-    z-index: 1;
+.SkillLinks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    color: #9aafff;
 }
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.I1Title:hover .tooltiptext {
-    visibility: visible;
+.SL:hover{
+    color: darkblue;
+    cursor: pointer;
+    margin: auto;
+}
+@media(max-height: 800px){
+    body{
+        overflow-y: visible;
+    }
 }

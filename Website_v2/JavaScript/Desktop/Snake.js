@@ -91,7 +91,7 @@ function directSnake(Border){
         }
     }
     else if(CurrentKey === "down"){
-        if (top >= Border.height - 30) {
+        if (top >= Border.height - 15) {
             SnakeLinks[0].style.top = "0px";
 
         }

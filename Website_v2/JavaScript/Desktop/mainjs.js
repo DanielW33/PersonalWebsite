@@ -144,9 +144,9 @@ function keymap(){
 
 function Writer() {
     let txt1 = "Hi,";
-    let txt2 = "I'm\u00A0Daniel\u00A0Williams";
-    let txt3 = "Senior\u00A0Computer\u00A0Science";
-    let txt4 = "Student\u00A0at\u00A0Penn\u00A0State\u00A0University";
+    let txt2 = "I'm\u00A0Daniel\u00A0Williams.";
+    let txt3 = "Computer\u00A0Science\u00A0Major";
+    let txt4 = "Graduate\u00A0from\u00A0Penn\u00A0State\u00A0University";
         addText(txt1, 1,0);
         addText(txt2,2,0);
         addText(txt3,3,0);

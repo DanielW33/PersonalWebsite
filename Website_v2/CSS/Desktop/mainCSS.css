@@ -88,7 +88,7 @@ body {
     cursor: pointer;
 }
 .homeContainer{
-    background: linear-gradient(-45deg, #282828, #3d4463, #3a3a52, #282828);
+    background: linear-gradient(-45deg, #282828, #465389, #3a3a52, #282828);
     background-size: 1000%, 1000%;
     height: 100%;
     width: 100%;
@@ -96,8 +96,9 @@ body {
     left: 0;
     margin: 0 0 0 0;
     position: absolute;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
 }
+
 @keyframes gradient{
     0%{
         background-position: 0 50%;

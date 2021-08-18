@@ -3,13 +3,7 @@ body {
     padding-left: 80px;
     overflow: hidden;
 }
-/*.TopImageContainer .BackgroundImage{
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}*/
+
 
 .TextContainer {
     position: absolute;
@@ -116,6 +110,11 @@ body {
     }
     to {
         transform: rotate(359deg);
+    }
+}
+@media(max-width: 1260px){
+    .TopImageContainer {
+        overflow: visible;
     }
 }
 @media(max-width: 800px){

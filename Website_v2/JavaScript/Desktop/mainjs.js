@@ -12,7 +12,7 @@ function clickherebutton(){
     element.style.display = "block";
 }
 function onClickClickHere(){
-    window.open("../../HTML/Desktop/Snake.html");
+    window.open("../../HTML/Desktop/Snake.php");
 }
 function Attacker(h){
     let Element = document.querySelector("#Player");

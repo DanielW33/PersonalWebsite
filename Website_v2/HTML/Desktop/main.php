@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,23 +21,23 @@
         <p class = "SideBarImageUnderText">Daniel Williams</p>
     </div>
     <div class = "GeneralNavigation">
-        <a href ="main.html" class = "Home">
+        <a href ="main.php" class = "Home">
             <img class = "HomeIcon" id = "HomeIcon" alt = "Home" src = "../../Images/Logos/HomeIconOrange.png">
             <h6 class = "HomeText">Home</h6>
         </a>
-        <a href ="About.html">
+        <a href ="About.php">
             <img class = "AboutIcon" id = "AboutIcon" alt = "About" src = "../../Images/Logos/person-IconBefore.png" onmouseover="transitionAboutTo()" onmouseleave="transitionAboutBack()">
             <h6 class = "AboutText">About</h6>
         </a>
-        <a href="Skills.html">
+        <a href="Skills.php">
             <img class = "SkillsIcon" id = "SkillsIcon" alt = "Skills" src = "../../Images/Logos/GearsIconBefore.png" onmouseover = "transitionSkillsTo()" onmouseleave="transitionSkillsBack()">
             <h6 class = "SkillsText">Skills</h6>
         </a>
-        <a href="Projects.html">
+        <a href="Projects.php">
             <img class = "ProjectsIcon" id = "ProjectsIcon" alt = "Projects" src = "../../Images/Logos/CPUIconBefore.png" onmouseover="transitionProjectsTo()" onmouseleave="transitionProjectsBack()">
             <h6 class = "ProjectsText">Projects</h6>
         </a>
-        <a href="Contact.html">
+        <a href="Contact.php">
             <img class = "ContactIcon" id = "ContactIcon" alt="Contact" src = "../../Images/Logos/EmailBefore.png" onmouseover="transitionContactTo()" onmouseleave="transitionContactBack()">
             <h6 class = "ContactText">Contact</h6>
         </a>

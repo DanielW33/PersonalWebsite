@@ -2,6 +2,7 @@ body{
     padding-left: 80px;
     background-color: #2d2d2d;
     overflow-x: hidden;
+
 }
 .Source{
 }
@@ -58,6 +59,7 @@ body{
     top: auto;
     left: auto;
     padding-right: 20px;
+    height: fit-content;
 }
 .SideText{
     overflow-y: auto;
@@ -65,6 +67,7 @@ body{
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     height: 300px;
     width: 1200px;
 }
@@ -85,6 +88,7 @@ body{
     cursor: pointer;
     background-color: #454545;
 }
+
 .dots{
     text-align: center;
 }
@@ -102,6 +106,7 @@ body{
     grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 10px;
     width: 1200px;
+    height: fit-content;
     transition: all 1s linear;
 }
 .imageFrame{
@@ -115,5 +120,82 @@ body{
     width: 100px;
     z-index: -1;
 }
-
-
+.grid2{
+    /* position: center;
+     bottom: 0;
+     right: 50%;
+     transform: translate(50%, 0);*/
+    height: 100%;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+@media(max-width: 1290px){
+    .SideText{
+        height: 300px;
+        width: 1000px;
+    }
+    .ImageContainer{
+        width: 1000px;
+    }
+    .imageFrame{
+        height: 280px;
+        width: 280px;
+    }
+    .Arrow{
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 1100px){
+    .SideText{
+        height: 300px;
+        width: 800px;
+    }
+    .ImageContainer{
+        width: 800px;
+    }
+    .imageFrame{
+        height: 100%;
+        width: 200px;
+    }
+    .Arrow{
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 900px){
+    .SideText{
+        height: 300px;
+        width: 600px;
+    }
+    .ImageContainer{
+        width: 600px;
+    }
+    .imageFrame{
+        width: 125px;
+    }
+}
+@media(max-width: 700px){
+    body{
+        overflow-x: visible;
+    }
+    .SideText{
+        height: 300px;
+        width: 600px;
+    }
+    .ImageContainer{
+        width: 600px;
+    }
+    .imageFrame{
+        width: 125px;
+    }
+    .Arrow{
+        height: 70px;
+        width: 70px;
+        font-size: 20px;
+    }
+}

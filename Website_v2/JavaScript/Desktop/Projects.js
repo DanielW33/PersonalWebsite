@@ -1,22 +1,25 @@
-
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
 let LoadedImages = new Array();
+let LoadedTitles = new Array();
+let LoadedText = new Array();
 let CurrentImageSet = 0;
 let CurrentStartImage = 0;
 let Images = Array(2);
 const Colors = ["red", "teal", "green", "blue", "yellow", "orange", "pink"];
 const ColorCount = 7;
+
 function __init__(){
+    LoadText();
     GenerateSquares();
 
-    loadImages(1, ".jpg");
-
+    loadImages(1, ".png", 5);
+    loadImages(2, ".jpg", 6);
+    loadImages(3, ".png", 6);
     setTimeout(function(){
         ImageHandler("ImageContainer0");
     }, 300);
-    setTimeout(function(){
-        loadImages(2, ".jpg");
-        loadImages(3, ".png");
-    }, 400);
+
+
 }
 function rotateImagesRight(){
     let Images = LoadedImages[CurrentImageSet];
@@ -39,7 +42,6 @@ function rotateImagesRight(){
 function rotateImagesLeft(){
     let Images = LoadedImages[CurrentImageSet];
     let imgFrames = [document.querySelector("#imageFrame0"),document.querySelector("#imageFrame1"),document.querySelector("#imageFrame2")]
-    console.log(CurrentStartImage);
     imgFrames[0].removeChild(Images[(CurrentStartImage)]);
     CurrentStartImage = (CurrentStartImage + 1) % Images.length;
     imgFrames[0].appendChild(Images[((CurrentStartImage) % Images.length)]);
@@ -47,39 +49,78 @@ function rotateImagesLeft(){
     imgFrames[2].appendChild((Images[(CurrentStartImage + 2) % Images.length]));
 
 }
-function loadImages(Dir, Type){
+function loadImages(Dir, Type, length){
+    console.log("Loading image set: " + Dir);
     let FileCount = 1;
-    let CheckFinished = false;
-    let CheckContinue = true;
     let Directory = Dir;
+    let Length = length;
     let TempArray = [];
     let img;
 
-    let IntervalID = setInterval(function(){
-        if(CheckFinished){
-            clearInterval(IntervalID);
+
+    for(let i = 0; i < Length; i++){
+        img = new Image();
+        img.src = "../../Images/ProjectsImages/Container" + Directory + "/img" + FileCount + Type;
+        TempArray.push(img);
+        if(FileCount === length){
             console.log("Finished loading image set " + Directory);
             LoadedImages.push(TempArray);
             return;
         }
-        if(CheckContinue) {
-            CheckContinue = false;
-            img = new Image();
-            img.onload = function(){
-                TempArray.push(img);
-                FileCount++;
-                CheckContinue = true;
-            };
-            img.onerror = function(){
-                CheckFinished = true;
-            };
+        FileCount++;
 
-            img.src = "../../Images/ProjectsImages/Container" + Directory + "/img" + FileCount + Type;
-        }
-    },1)
+    }
+}
+function LoadText(){
+    LoadedTitles.push("Cyclist Reaction Time Instrument and Software");
+    let String1 = "This project was sponsored by ARCCA inc. This project was my senior engineering design project. The objective of this project was to record a cyclists reaction time for " +
+        "statistical validation.<br><br>My team and I had full discretion on design and technologies used. " +
+        "My role in this project was leading the development of the Software development portion of the project." +
+        "When Starting the project, I chose to use Java for two reasons. First Java is cross compatible between Windows, Mac, and Linux computers. " +
+        "Second an entire java archive file can sit " +
+        "on the SD card that we used in the hardware portion of the project to collect data.<br><br> The GUI needed to include:<br>" +
+        "- An input form for parameters to be entered.<br>" +
+        "- The user's input need to be validated to ensure it was correct<br>" +
+        "- A GUI page with previously entered configurations for convenience purposes.<br>" +
+        "- On the statistical analysis GUI page, the program collected and did calculations on the trial data collected.<br>" +
+        "- Lastly graph the data collected to visually view the data collected.";
+    LoadedTitles.push("Java Development: Minecraft Packet Filtering; Custom Events");
+    LoadedTitles.push("Java Development: Minecraft RankUp Plugin");
+    LoadedTitles.push("LionCloud Memory Allocation Project");
+    LoadedTitles.push("Uni-Core CPU Pipelining");
+
+    LoadedText.push(String1);
+    let Title = document.querySelector("#Title");
+    let SubText = document.querySelector("#SubText");
+    Title.textContent = LoadedTitles[0];
+    SubText.innerHTML = String1;
 
 }
+/*let IntervalID = setInterval(function(){
+       if(CheckFinished){
+           clearInterval(IntervalID);
+           console.log("Finished loading image set " + Directory);
+           LoadedImages.push(TempArray);
+           return;
+       }
+       if(CheckContinue) {
+           CheckContinue = false;
+           img = new Image();
+           img.onload = function(){
+               TempArray.push(img);
+               FileCount++;
+               CheckContinue = true;
+           };
+           img.onerror = function(){
+               CheckFinished = true;
+           };
 
+           img.src = "../../Images/ProjectsImages/Container" + Directory + "/img" + FileCount + Type;
+       }
+   },1)*/
+function TextHandler(ContainerID){
+
+}
 function ImageHandler(ContainerID){
     let imageSrcSet = LoadedImages[CurrentImageSet];
     let Container = document.querySelector("#" + ContainerID);
@@ -88,6 +129,7 @@ function ImageHandler(ContainerID){
 
     let imgFrame = new Array();
 
+    console.log(imageSrcSet.length);
     for(let i = 0; i < imageSrcSet.length; i++){
         if(i < 3){
             imgFrame.push(document.createElement("div"));
@@ -199,7 +241,7 @@ function fade(ID){
             if (opacity < 1) {
                 opacity += Math.random() * 0.1;
                 opacity = opacity > 1 ? 1 : opacity;
-                document.getElementById(ID).style.opacity = opacity;
+                document.getElementById(ID).style.opacity = opacity + "";
             } else {
                 tf = false;
             }
@@ -210,7 +252,7 @@ function fade(ID){
             if(opacity !== 0){
                 opacity -= Math.random() * .1;
                 opacity = opacity < 0 ? 0 : opacity;
-                document.getElementById(ID).style.opacity = opacity;
+                document.getElementById(ID).style.opacity = opacity + "";
             }
             else{
                 clearInterval(IntervalID);

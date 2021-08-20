@@ -1,3 +1,4 @@
+
 function openLinkedin(){
     window.open("https://www.linkedin.com/in/daniel-williams-600574178/");
 }

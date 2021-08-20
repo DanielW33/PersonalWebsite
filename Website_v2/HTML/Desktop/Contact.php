@@ -49,13 +49,8 @@
     </div>
 </div>
 <body>
-    <div id="element">I am an element!</div>
+    <div class = back id = back></div>
 </body>
 <script src = "../../JavaScript/Desktop/SubFileJS.js"></script>
-<script>
-    var element = document.querySelector("#element");
-    setTimeout(function() {
-        element.style.top = "50%";
-    }, 200);
-</script>
+<script src="../../JavaScript/Desktop/Contact.js"></script>
 </html>

@@ -46,10 +46,10 @@
     </div>
     <div class = "SideBarBottomLogos">
         <ul class = "logosList">
-            <li class = "logos"><img class = "Linkedin" id = "Linkedin" onclick = "openLinkedin()" src = "../../Images/Logos/linkedin-logo.png"></li>
-            <li class = "logos"><img class = "GitHub" id = "GitHub" onclick = "openGitHub()" src = "../../Images/Logos/GitHub-Mark-Light-120px-plus.png"> </li>
-            <li class = "logos"><img class = "Facebook" id = "Facebook" onclick = "openFacebook()" src = "../../Images/Logos/Facebook.png"></li>
-            <li class = "logos"><img class = "Instagram" id ="Instagram" onclick = "openInstagram()" src = "../../Images/Logos/Instagram.png"></li>
+            <li class = "logos"><img class = "Linkedin" id = "Linkedin" onclick = "openLinkedin()" src = "../../Images/Logos/linkedin-logo.png" alt = "Linkedin"></li>
+            <li class = "logos"><img class = "GitHub" id = "GitHub" onclick = "openGitHub()" src = "../../Images/Logos/GitHub-Mark-Light-120px-plus.png" alt="Github"> </li>
+            <li class = "logos"><img class = "Facebook" id = "Facebook" onclick = "openFacebook()" src = "../../Images/Logos/Facebook.png" alt="Facebook"></li>
+            <li class = "logos"><img class = "Instagram" id ="Instagram" onclick = "openInstagram()" src = "../../Images/Logos/Instagram.png" alt="Instagram"></li>
         </ul>
     </div>
 </div>
@@ -58,12 +58,16 @@
     <div class = GridLayout id="GridLayout">
         <div id="Grid1Container" class="GridContainer">
             <div class = grid id = grid1">
-                <div class = SideText id = SideText1><h1 style="margin: 0 0 0 0">Title</h1><p style="margin: 0 0 0 0">Lorem ipsum dolo
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet asperiores, dolores ducimus exercitationem molestiae nemo saepe similique vero. Accusantium aperiam consequatur culpa eius id nesciunt officia quam rerum!
-                    r sit amet, consectetur adipisicing elit. Accusantium alias aliquid atque commodi consequatur dolorem ducimus earum, harum id minima optio, perspiciatis, praesentium quibusdam? Consequatur deleniti iusto natus nemo voluptatem?</p>  </div>
-                <div class = ImageContainer id="ImageContainer0">
+                <div class = SideText id = SideText1>
+                    <h1 id = "Title" class = "Title" style="margin: 0 0 0 0"></h1>
+                    <p id="SubText" class = "SubText" style="margin: 0 0 0 0"></p>
                 </div>
-
+                <div class = ImageContainer id="ImageContainer0"></div>
+            </div>
+            <div class = grid2 id="grid2">
+                <div class = Arrow style="display: inline-flex; border-radius: 0; height: 50px; width: 50px;"><h4>&#10094;</h4></div>
+                <div style="color: white; padding-left: 30px; padding-right: 30px;"><h3>Previous - Next</h3></div>
+                <div class="Arrow" style="display: inline-flex; border-radius: 0; height: 50px; width: 50px;"><h4>&#10095;</h4></div>
             </div>
         </div>
     </div>
@@ -82,7 +86,7 @@
 <div class = Arrow id="RArrow" onclick="rotateImagesRight()"><h1>&#10095;</h1></div>
 <div class = Arrow id="LArrow" onclick="rotateImagesLeft()"><h1>&#10094;</h1></div>
 <script>
-    window.onload = __init__();
+    window.onload = __init__;
 
 </script>
 

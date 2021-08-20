@@ -43,11 +43,13 @@ body{
     background-image: linear-gradient(to right, blue, green);
 }
 .header{
-    color: white;
+    color: gray;
+    z-index: 10;
 
 }
 .SnakeScore{
-    color: white;
+    color: grey;
+    z-index: 10;
 }
 .StartButton{
     position: absolute;
@@ -74,4 +76,29 @@ body{
     text-align: center;
     border-radius: 20px;
     opacity: 1;
+}
+@media(max-width: 1550px){
+    .GameArea{
+        width: 900px;
+    }
+}
+@media(max-height: 850px){
+    .GameArea{
+        height: 600px;
+    }
+}
+@media(max-width: 900px){
+    .GameArea{
+        width: 720px;
+    }
+}
+@media(max-height: 600px){
+    .GameArea{
+        height: 480px;
+    }
+}
+@media(max-width: 720px){
+    .GameArea{
+        width: 585px;
+    }
 }

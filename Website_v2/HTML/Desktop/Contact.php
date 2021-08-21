@@ -5,27 +5,38 @@
     $port = 3306;
     $Protocol = "UDP";
 
-$conn = mysqli_connect($Servername, $Username, $Password);
+    $Email = "";
+    $FirstName = "";
+    $LastName = "";
+    $About = "";
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST["submit"])) {
+        $Email = $_POST["email"];
+        $FirstName = $_POST["fname"];
+        $LastName = $_POST["lname"];
+        $About = $_POST["about"];
+        /*echo $Email;
+        echo $FirstName;
+        echo $LastName;
+        echo $About;*/
+    }
 }
-echo "Connected successfully";
+    $conn = mysqli_connect($Servername, $Username, $Password);
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST["submit"])) {
-            $Email = $_POST["email"];
-            $FirstName = $_POST["fname"];
-            $LastName = $_POST["lname"];
-            $About = $_POST["about"];
-            echo $Email;
-            echo $FirstName;
-            echo $LastName;
-            echo $About;
-        }
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
     }
 
+    $Sql = "CREATE TABLE IF NOT EXISTS Contacted(Email varchar(32) PRIMARY KEY,
+                                                 FirstName varchar(32),                                                     
+                                                 LastName varchar(32),
+                                                 Reason varchar(300))";
+
+        $conn->query($Sql);
+        $Sql = "INSERT INTO Contacted(Email, FirstName, LastName, Reason) VALUES ($Email, $FirstName, $LastName, $About)";
+        $conn->query($Sql);
+        $conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,12 +103,13 @@ echo "Connected successfully";
         </div>
         <div>
             <h2>Reason for Contacting:</h2>
-            <textarea id="about" name="about" cols="50" rows="15" placeholder="I am a recruiter from..."></textarea>
+            <textarea id="about" name="about" cols="50" rows="15" placeholder="I am a recruiter from... (256 characters or less)"></textarea>
         </div>
         <input type="submit" name="submit" class="submit" placeholder="Submit" style="height: 20px;">
         </form>
+        <h1 id="Submitted" class="Submitted" style="display: none">Submitted!</h1>
     </div>
-    <div class ="mainFooter">
+    <div class ="Footer">
         <h3>Contact Information:</h3>
         <h4>Email: danielevanwil@gmail.com</h4>
         <h4>Phone: (570) 406-0374</h4>

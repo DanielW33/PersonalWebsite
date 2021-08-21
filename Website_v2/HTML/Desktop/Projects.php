@@ -71,6 +71,7 @@
             </div>
         </div>
     </div>
+
 </body>
 <div class = Square id = "Square1"></div>
 <div class = Square id = "Square2"></div>

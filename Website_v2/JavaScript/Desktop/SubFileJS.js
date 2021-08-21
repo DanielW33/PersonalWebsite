@@ -1,4 +1,6 @@
-
+function openResume(){
+    window.open("../../Files/Williams_Daniel_Resume.pdf");
+}
 function openLinkedin(){
     window.open("https://www.linkedin.com/in/daniel-williams-600574178/");
 }

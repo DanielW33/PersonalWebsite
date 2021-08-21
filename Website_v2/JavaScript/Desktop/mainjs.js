@@ -6,9 +6,7 @@ function __init__(){
     keymap();
     follower();
 }
-function openResume(){
-    window.open("../../Files/Williams_Daniel_Resume.pdf");
-}
+
 function clickherebutton(){
     let element = document.querySelector("#ClickHere");
     element.style.display = "block";

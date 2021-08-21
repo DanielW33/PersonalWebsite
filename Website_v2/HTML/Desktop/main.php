@@ -64,7 +64,7 @@
     <div class = "ClickHere" id="ClickHere" onclick="onClickClickHere()"><h1>Click Here</h1></div>
 
 </div>
-<div class ="mainFooter">
+<div class ="Footer">
     <h3>Contact Information:</h3>
     <h4>Email: danielevanwil@gmail.com</h4>
     <h4>Phone: (570) 406-0374</h4>

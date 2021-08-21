@@ -13,23 +13,3 @@ body{
 .submit{
     margin-top: 30px;
 }
-.mainFooter{
-    z-index: 1;
-    position: fixed;
-    bottom: 0;
-    float: bottom;
-    display: block;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    justify-self: left;
-    color: white;
-    padding-left: 50px;
-    font-weight: bolder;
-}
-.Resume{
-
-}
-.Resume:hover{
-    color: lightblue;
-    cursor: pointer;
-}

@@ -92,6 +92,34 @@ body {
     position: absolute;
     animation: gradient 10s ease infinite;
 }
+.LandingImage{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #0e0c0c;
+}
+.mainFooter{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-self: left;
+    color: white;
+    padding-left: 50px;
+}
+.Resume{
+
+}
+.Resume:hover{
+    color: lightblue;
+    cursor: pointer;
+}
 
 @keyframes gradient{
     0%{
@@ -110,6 +138,12 @@ body {
     }
     to {
         transform: rotate(359deg);
+    }
+}
+@media(max-width: 1825px){
+    .LandingImage{
+        height: 300px;
+        width: 250px;
     }
 }
 @media(max-width: 1260px){

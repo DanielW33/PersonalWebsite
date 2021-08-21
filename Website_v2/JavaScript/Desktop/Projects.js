@@ -83,7 +83,7 @@ function LoadText(){
         "- The user's input need to be validated to ensure it was correct<br>" +
         "- A GUI page with previously entered configurations for convenience purposes.<br>" +
         "- On the statistical analysis GUI page, the program collected and did calculations on the trial data collected.<br>" +
-        "- Lastly graph the data collected to visually view the data collected.";
+        "- Lastly the statistical analysis page has a graph options to visually view your collected data.";
     LoadedTitles.push("Java Development: Minecraft Packet Filtering; Custom Events");
     LoadedTitles.push("Java Development: Minecraft RankUp Plugin");
     LoadedTitles.push("LionCloud Memory Allocation Project");

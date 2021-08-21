@@ -14,7 +14,7 @@
 
 <body id = frame>
 <div class = homeContainer id="homeContainer">
-    <img class="LandingImage" style="height: 500px; width: 400px; position: absolute; top: 5%; right: 5%; border-radius: 100%; border-style: solid; border-color: #0e0c0c" src="../../Images/LandingPageImage.jpeg">
+
     <div class = "SideBar">
     <div class = "SideBarImageContainer">
         <img src = "../../Images/Profile.jpg" class = "CornerImage" alt ="Corner Image">
@@ -52,7 +52,7 @@
         </ul>
     </div>
 </div>
-
+    <img class="LandingImage"  src="../../Images/LandingPageImage.jpeg">
     <div class = "TextContainer">
         <div class="IntroLines" id="Intro1"></div>
         <div class="IntroLines" id="Intro2"></div>
@@ -62,8 +62,16 @@
     <div class="player" id="Player"></div>
     <div class="Follower" id="Follower"></div>
     <div class = "ClickHere" id="ClickHere" onclick="onClickClickHere()"><h1>Click Here</h1></div>
+
+</div>
+<div class ="mainFooter">
+    <h3>Contact Information:</h3>
+    <h4>Email: danielevanwil@gmail.com</h4>
+    <h4>Phone: (570) 406-0374</h4>
+    <h4 onclick="openResume()" class="Resume">My Resume</h4>
 </div>
 </body>
+
 
 <script src = "../../JavaScript/Desktop/mainjs.js"></script>
 <script src="../../JavaScript/Desktop/SubFileJS.js"></script>

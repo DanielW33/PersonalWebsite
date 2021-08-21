@@ -1,4 +1,30 @@
 <?php
+    $Servername = "localhost";
+    $Databasename = "dannywde_Contact";
+
+    $port = 3306;
+    $Protocol = "UDP";
+
+$conn = mysqli_connect($Servername, $Username, $Password);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST["submit"])) {
+            $Email = $_POST["email"];
+            $FirstName = $_POST["fname"];
+            $LastName = $_POST["lname"];
+            $About = $_POST["about"];
+            echo $Email;
+            echo $FirstName;
+            echo $LastName;
+            echo $About;
+        }
+    }
 
 ?>
 <!DOCTYPE html>
@@ -49,7 +75,34 @@
     </div>
 </div>
 <body>
-    <div class = back id = back></div>
+    <div class="ContactContainer">
+        <form action="Contact.php" method="post">
+        <h1>Contact Me:</h1>
+        <div>
+            <label for="email" style="font-size: 20px">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="johndoe@example.com">
+        </div>
+        <div>
+            <label for="fname" style="font-size: 20px">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="John">
+        </div>
+        <div>
+            <label for="lname" style="font-size: 20px">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe">
+        </div>
+        <div>
+            <h2>Reason for Contacting:</h2>
+            <textarea id="about" name="about" cols="50" rows="15" placeholder="I am a recruiter from..."></textarea>
+        </div>
+        <input type="submit" name="submit" class="submit" placeholder="Submit" style="height: 20px;">
+        </form>
+    </div>
+    <div class ="mainFooter">
+        <h3>Contact Information:</h3>
+        <h4>Email: danielevanwil@gmail.com</h4>
+        <h4>Phone: (570) 406-0374</h4>
+        <h4 onclick="openResume()" class="Resume">My Resume</h4>
+    </div>
 </body>
 <script src = "../../JavaScript/Desktop/SubFileJS.js"></script>
 <script src="../../JavaScript/Desktop/Contact.js"></script>

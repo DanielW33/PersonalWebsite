@@ -1,49 +1,221 @@
+body{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
 .MobileNavigation{
     display: grid;
     position: fixed;
     justify-content: space-evenly;
     grid-template-columns: auto auto auto auto auto auto;
     width: 100%;
-    height: 100px;
+    height: 180px;
     margin: 0;
     background-color: #0e0c0c;
     top: 0;
     left: 0;
 }
 .HomeIcon{
-    height: 50px;
-    width: 50px;
-    padding-top: 10px;
-}
-.AboutIcon{
-    height: 50px;
-    width: 50px;
-    padding-top: 10px;
-}
-.SkillsIcon{
-    height: 50px;
-    width: 50px;
-    padding-top: 10px;
-}
-.ContactIcon{
-    height: 50px;
-    width: 50px;
-    padding-top: 10px;
-}
-.ProjectsIcon{
-    height: 50px;
-    width: 50px;
-    padding-top: 10px;
-}
-.MenuIcon{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width:  100px;
     padding-top: 20px;
 }
-a:link{
-    text-decoration: none;
+.Home{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    margin: 0;
 }
-a .IconText{
+.AboutIcon{
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+.SkillsIcon{
+    height: 100px;
+    width: 120px;
+    padding-top: 20px;
+}
+.ContactIcon{
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+.ProjectsIcon{
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+.MenuIcon{
+    height: 100px;
+    width: 100px;
+    padding-top: 30px;
+}
+
+.Cover{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+}
+.DropDown{
+    display: none;
+    position: fixed;
+    right:0;
+    top: 180px;
+    height: 1000px;
+    width: 800px;
     color: white;
-    transform: translate(-15%, -80%);
+    z-index: 2;
+}
+
+.GitHubDD{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-color: #818181;
+    border-bottom-style: solid;
+    background-color: #0e0c0c;
+
+}
+.GitHubDD:hover{
+    background-color: #818181;
+    color: black;
+    cursor: pointer;
+}
+.GithubIcon{
+    height: 100px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.GitHubDD h2{
+    font-size: 40px;
+}
+.InstagramDD{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-bottom-color: #818181;
+    border-bottom-style: solid;
+    background-color: #0e0c0c;
+
+}
+.InstagramDD:hover{
+    background-color: #818181;
+    color: black;
+    cursor: pointer;
+
+}
+.InstagramDD h2{
+    font-size: 40px;
+
+}
+.InstagramIcon{
+    height: 100px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.FacebookDD{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-bottom-color: #818181;
+    border-bottom-style: solid;
+    background-color: #0e0c0c;
+
+}
+.FacebookDD h2{
+    font-size: 40px;
+
+}
+.FacebookDD:hover{
+    background-color: #818181;
+    color: black;
+    cursor: pointer;
+
+}
+.FacebookIcon{
+    height: 100px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.LinkedinDD{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-bottom-color: #818181;
+    border-bottom-style: solid;
+    background-color: #0e0c0c;
+
+}
+.LinkedinDD h2{
+    font-size: 40px;
+
+}
+.LinkedinDD:hover{
+    background-color: #818181;
+    color: black;
+    cursor: pointer;
+
+}
+.LinkedinIcon{
+    height: 100px;
+    width: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ContactTextContainer{
+    background-color: #0e0c0c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.ContactTextContainer h2{
+    padding-left: 30px;
+}
+.Resume:hover{
+    color: lightblue;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

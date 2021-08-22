@@ -69,6 +69,7 @@
                 <div style="color: white; padding-left: 30px; padding-right: 30px;"><h3>Previous - Next</h3></div>
                 <div class="Arrow" style="display: inline-flex; border-radius: 0; height: 50px; width: 50px;"><h4>&#10095;</h4></div>
             </div>
+            <h1>UNDER CONSTRUCTION</h1>
         </div>
     </div>
 

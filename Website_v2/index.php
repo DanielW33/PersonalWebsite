@@ -3,7 +3,7 @@
 checkTouchScreen();
 
 function checkTouchScreen(){
-    if(isMobile()){
+    if(!isMobile()){
         $link = '<script>window.open("HTML/Desktop/main.php", "_self");</script>';
         echo $link;
 

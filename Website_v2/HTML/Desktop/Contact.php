@@ -1,42 +1,34 @@
 <?php
-    $Servername = "localhost";
-    $Databasename = "dannywde_Contact";
-
-    $port = 3306;
-    $Protocol = "UDP";
-
-    $Email = "";
-    $FirstName = "";
-    $LastName = "";
-    $About = "";
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST["submit"])) {
         $Email = $_POST["email"];
         $FirstName = $_POST["fname"];
         $LastName = $_POST["lname"];
         $About = $_POST["about"];
-        /*echo $Email;
-        echo $FirstName;
-        echo $LastName;
-        echo $About;*/
-    }
-}
-    $conn = mysqli_connect($Servername, $Username, $Password);
 
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
 
-    $Sql = "CREATE TABLE IF NOT EXISTS Contacted(Email varchar(32) PRIMARY KEY,
+        $Servername = "localhost";
+        $Databasename = "dannywde_Contact";
+
+
+        $conn = mysqli_connect($Servername, $Username, $Password, $Databasename);
+
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+
+        $Sql = "CREATE TABLE IF NOT EXISTS Contacted(Email varchar(32) PRIMARY KEY,
                                                  FirstName varchar(32),                                                     
                                                  LastName varchar(32),
                                                  Reason varchar(300))";
 
-        $conn->query($Sql);
-        $Sql = "INSERT INTO Contacted(Email, FirstName, LastName, Reason) VALUES ($Email, $FirstName, $LastName, $About)";
-        $conn->query($Sql);
+       $conn->query($Sql);
+        $Sql2 = "INSERT INTO 'Contacted'('Email', 'FirstName', 'LastName', 'Reason') VALUES ( '$Email', '$FirstName', '$LastName', '$About')";
+      $conn->query($Sql2);
         $conn->close();
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -107,7 +99,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <input type="submit" name="submit" class="submit" placeholder="Submit" style="height: 20px;">
         </form>
-        <h1 id="Submitted" class="Submitted" style="display: none">Submitted!</h1>
     </div>
     <div class ="Footer">
         <h3>Contact Information:</h3>

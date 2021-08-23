@@ -4,19 +4,22 @@ body {
     overflow: hidden;
 }
 
-
+.TIContainer{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+    position: fixed;
+    top: 50%;
+    left: 160px;
+    transform: translate(0,-50%);
+}
 .TextContainer {
-    position: absolute;
-     top: 20%;
-     left: 15%;
-     right: 25%;
-     margin: 0;
+    position: relative;
      text-align: left;
      color: white;
      font-size: 30px;
      font-family: "AR PL UKai CN";
      font-weight: bold;
-     padding-left: 20px;
 }
 .IntroLines{
     display: flex;
@@ -95,12 +98,14 @@ body {
 .LandingImage{
     height: 500px;
     width: 400px;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+    position: relative;
     border-radius: 100%;
     border-style: solid;
     border-color: #0e0c0c;
+    transform: translate(10%, -40%);
+}
+.Placeholder{
+    opacity: 0;
 }
 .Footer{
     z-index: 1;
@@ -140,101 +145,61 @@ body {
         transform: rotate(359deg);
     }
 }
-@media(max-width: 1825px){
+@media(max-width: 1650px){
+    .TextContainer {
+        font-size: 20px;
+
+    }
+
     .LandingImage{
         height: 300px;
-        width: 250px;
+        width: 200px;
+        transform: translate(10%, -40%);
     }
+
 }
-@media(max-width: 1260px){
-    .TopImageContainer {
+@media(max-width: 1080px){
+    .TextContainer {
+        font-size: 15px;
+
+    }
+
+    .LandingImage{
+        height: 250px;
+        width: 150px;
+        transform: translate(10%, -40%);
+    }
+
+}
+@media(max-width: 850px){
+    .TextContainer {
+        font-size: 10px;
+
+    }
+
+    .LandingImage{
+        height: 200px;
+        width: 100px;
+        transform: translate(10%, -40%);
+    }
+
+}
+@media(max-height: 370px){
+    body {
+        background-color: #282828;
+        padding-left: 80px;
         overflow: visible;
     }
-}
-@media(max-width: 800px){
-    .TopImageContainer {
-        overflow: auto;
-    }
-    .TopImageContainer .BackgroundImage{
-        top: 0;
-        left: 0;
-        height: fit-content;
-        width: 100%;
-        position: absolute;
-    }
-
-}
-@media(max-width: 587px){
-    .TopImageContainer {
-        overflow: auto;
-    }
-    .TopImageContainer .BackgroundImage{
-        top: 0;
-        left: 0;
-        height: 175%;
-        width: 100%;
-        position: absolute;
-    }
-
-}
-@media (max-height: 700px){
-    .TopImageContainer{
-        overflow-y: visible;
-    }
-    .TopImageContainer .BackgroundImage{
-        top: 0;
-        left: 0;
-        height: fit-content;
-        width: 100%;
-        position: absolute;
-    }
     .TextContainer {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        right: 25%;
-        margin: 0;
-        text-align: left;
-        color: white;
-        font-size: 15px;
-        font-family: "AR PL UKai CN";
-        font-weight: bold;
-        padding-left: 20px;
+        font-size: 10px;
+
+    }
+
+    .LandingImage{
+        height: 200px;
+        width: 100px;
+        transform: translate(10%, -40%);
     }
 
 }
-@media(max-height: 350px){
-    .TopImageContainer{
-        overflow-y: hidden;
-    }
-    .TopImageContainer .BackgroundImage{
-        top: 0;
-        left: 0;
-        height: fit-content;
-        width: 100%;
-        position: absolute;
-    }
-    .TextContainer {
-        position: relative;
-        right: 25%;
-        margin: 0;
-        text-align: left;
-        color: white;
-        font-size: 15px;
-        font-family: "AR PL UKai CN";
-        font-weight: bold;
-    }
 
-}
-@media(max-height: 200px){
-    .TopImageContainer{
-      overflow-y: visible;
-    }
-    .TopImageContainer .BackgroundImage{
-        top: 0;
-        left: 0;
-        height: 175%;
-        width: 100%;
-        position: absolute;
-    }
-}

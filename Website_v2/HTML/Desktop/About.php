@@ -61,13 +61,14 @@
 <div class = AboutContainer>
   <div class = "AboutBody">
     <h1 class = "AboutTitle"><br>About me:</h1>
-      <p class = "AboutMainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I recently graduated Penn State University on August 14th, 2021.
-        I am looking for a role as a Entry level Software Engineer, however my goal is to eventually be a Embedded Software Engineer.
+      <p class = "AboutMainText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I graduated Penn State University on August 14th, 2021.
+        I am looking for a role as a Entry Level Software Engineer, however my goal is to eventually be a Embedded Software Engineer.
       </p>
     <p class = "AboutMainText">
       To help reach my goals, I have always put emphasis on keeping Java and C/C++ my main programming languages. I am also studying C# because I have an interest in working on
-      standalone desktop applications, and I recently started studying React framework because it seemed like a very popular and interesting technology.
-      I enjoy working on front end design, but I have only done it at my own digression (this website for example).
+      standalone desktop applications, and I recently started studying React framework because it seemed like a very popular technology and I believe app development will continue moving
+        in the direction of web applications..
+      I enjoy working on front end design, but I have only done it at my own digression (this website for example. Check out the mobile version!).
     </p>
   </div>
 </div>

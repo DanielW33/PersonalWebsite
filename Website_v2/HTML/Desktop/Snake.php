@@ -16,8 +16,9 @@
     <h1 class = SnakeScore id="SnakeScore">0</h1>
     <div class = GameContainer id="GameContainer"></div>
 
-    <div id="StartButton" class="StartButton" onclick="StartGame()"><h1>Click Here to Start</h1></div>
+    <div id="StartButton" class="StartButton" onclick="StartGame()"><h1>Click Here to Start</h1><h1>W-A-S-D to move</h1></div>
     <div id="SnakeLose" class="SnakeLose"><h1>You Lost.</h1></div>
+
 </div>
 
 

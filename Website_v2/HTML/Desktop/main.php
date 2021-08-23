@@ -52,12 +52,18 @@
         </ul>
     </div>
 </div>
-    <img class="LandingImage"  src="../../Images/LandingPageImage.jpeg">
-    <div class = "TextContainer">
-        <div class="IntroLines" id="Intro1"></div>
-        <div class="IntroLines" id="Intro2"></div>
-        <div class="IntroLines" id="Intro3"></div>
-        <div class="IntroLines" id="Intro4"></div>
+
+
+    <div class="TIContainer">
+        <div class = "TextContainer">
+            <div class="IntroLines" id="Intro1"></div>
+            <div class="IntroLines" id="Intro2"></div>
+            <div class="IntroLines" id="Intro3"></div>
+            <div class="IntroLines" id="Intro4"></div>
+            <div class="Placeholder"><h1>123456789012345678901234567890123456</h1></div>
+        </div>
+        <img class="LandingImage"  src="../../Images/LandingPageImage.jpeg" alt="HomeImage">
+
     </div>
     <div class="player" id="Player"></div>
     <div class="Follower" id="Follower"></div>

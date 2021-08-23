@@ -54,8 +54,9 @@
     <div class = BackgroundContainer>
         <div class = "BackgroundMiddle" id="BackgroundMiddle">
             <h1>Skills:</h1>
-            <p class = "SkillText">Languages: I am proficient in Java, C/C++, and I have done some projects with python, mySQL, HTML, JavaScript, Scheme and PHP.</p>
-            <p class = "SkillText">Abstract Data Types: I have implemented and used many ADT in my projects, such as Stacks, Queues in an polymorphic and modular manner for code usability throughout.</p>
+            <p class = "SkillText">Languages: I am proficient in Java, C/C++, and I am partially experienced with Python, mySQL, HTML, JavaScript, Scheme and PHP.</p>
+            <p class = "SkillText">Abstract Data Types: I have implemented and used ADTs in my projects. ADTs such as Stacks, Queues, and lists. Each implemented in a
+                polymorphic and modular manor for code re-usability throughout.</p>
             <p class = "SkillText">Linux: I am experienced in using linux/Unix operating systems. My main computer runs Pop-OS, because it helps me increase my productivity as a developer.</p>
             <p class = "SkillText">Multitasking: I like to keep organized in order to prioritize tasks properly and meet my deadlines everytime.</p>
             <p class = "SkillText">Analytical Skills: Besides having a Math Minor, I have always been a critical and out of the box thinker.</p>
